@@ -11,13 +11,6 @@ from core.rag_system import NewsRAGSystem
 from ui.components import UIComponents
 from ui.dashboard import Dashboard
 from config import PAGE_TITLE, PAGE_ICON, DEFAULT_SEARCH_RESULTS, MAX_SEARCH_RESULTS
-# Fix for ChromaDB SQLite compatibility on Streamlit Cloud
-import sys
-try:
-    __import__('pysqlite3')
-    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-except ImportError:
-    pass 
 
 def initialize_session_state():
     """Initialize session state variables"""
