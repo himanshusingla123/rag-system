@@ -11,9 +11,7 @@ from core.rag_system import NewsRAGSystem
 from ui.components import UIComponents
 from ui.dashboard import Dashboard
 from config import PAGE_TITLE, PAGE_ICON, DEFAULT_SEARCH_RESULTS, MAX_SEARCH_RESULTS
-import sys
-import pysqlite3
-sys.modules['sqlite3'] = pysqlite3
+
 
 def initialize_session_state():
     """Initialize session state variables"""
