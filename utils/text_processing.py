@@ -9,9 +9,9 @@ from textstat import flesch_kincaid_grade, automated_readability_index
 
 # Download required NLTK data
 try:
-    nltk.data.find('tokenizers/punkt_tab')
+    nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt_tab')
+    nltk.download('punkt')
 
 class TextProcessor:
     """Text processing utilities"""
