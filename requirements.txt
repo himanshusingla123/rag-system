@@ -3,7 +3,6 @@ pandas==2.3.1
 numpy==2.2.6
 sentence-transformers==5.1.0
 transformers==4.55.2
-torch==2.8.0
 nltk==3.9.1
 textstat==0.7.8
 feedparser==6.0.11
@@ -12,5 +11,4 @@ plotly==6.3.0
 python-dateutil==2.9.0.post0
 scikit-learn==1.7.1
 typing-extensions==4.14.1
-chromadb>=0.4.15
-pysqlite3-binary
+chromadb==1.0.17
